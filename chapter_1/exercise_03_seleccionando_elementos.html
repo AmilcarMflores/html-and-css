@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Selectores</title>
+    <style>
+      ul {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: block;
+        padding: 16px;
+      }
+
+      li:nth-child(odd) {
+        background-color: deepskyblue;
+        color: white;
+        font-weight: bold;
+      }
+
+      li.selected {
+        background-color: hotpink;
+      }
+
+      li.selected ~ li:nth-child(odd) {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li class="selected">Elemento 5</li>
+      <li>Elemento 6</li>
+      <li>Elemento 7</li>
+      <li>Elemento 8</li>
+      <li>Elemento 9</li>
+    </ul>
+  </body>
+</html>
